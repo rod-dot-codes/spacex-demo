@@ -20,7 +20,7 @@ Please see the demo at [https://spacex.rod.codes](https://spacex.rod.codes)
 
 ## Next Todo
 
-- Pre-load the images in the background after loading the Javascript - at the moment, it is quite janky when
-you scroll. Can you preload hints or img tags with a lower priority.
+- ~Pre-load the images in the background after loading the Javascript - at the moment, it is quite janky when
+you scroll. Can you preload hints or img tags with a lower priority.~ = *DONE!*
 - Create a continously deploying Github Action that caches the GraphQL pre-built and pre-rendered into the page to speed up
 the demo.

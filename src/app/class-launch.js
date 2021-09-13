@@ -5,6 +5,15 @@ class Launch {
       this.name = data.mission_name;
       this.date = Date.parse(data.launch_date_utc);
       this.launch_year = parseInt(data.launch_year);
+      // Create a img tag to preload the image
+      if (this.getMissionPatch()) {
+        let img = new Image();
+        img.src = this.getMissionPatch();
+        img.style = "display: none";
+        img.importance = "low";
+        document.body.appendChild(img);
+      }
+
 
     }
 
@@ -14,7 +23,7 @@ class Launch {
 
     getMissionPatch() {
       let missionPatch = this.data.links.mission_patch_small;
-      if (!missionPatch) {
+      if (!missionPatch || missionPatch == "undefined") {
         return;
       }
       let filename = missionPatch.split("/").pop();

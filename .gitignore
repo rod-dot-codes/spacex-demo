@@ -91,7 +91,6 @@ web_modules/
 # Next.js build output
 .next
 out
-workers-site
 prod
 .DS_Store
 wrangler.toml
