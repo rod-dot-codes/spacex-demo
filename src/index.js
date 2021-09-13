@@ -10,26 +10,8 @@ import popper from "cytoscape-popper";
 
 import stylesArray from "./app/styles-array.js";
 
-window.avifSupport = null;
-async function supportsAvif() {
-    if (!window.createImageBitmap) return false;
-    const avifData =
-        "data:image/avif;base64,AAAAFGZ0eXBhdmlmAAAAAG1pZjEAAACgbWV0YQAAAAAAAAAOcGl0bQAAAAAAAQAAAB5pbG9jAAAAAEQAAAEAAQAAAAEAAAC8AAAAGwAAACNpaW5mAAAAAAABAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAARWlwcnAAAAAoaXBjbwAAABRpc3BlAAAAAAAAAAQAAAAEAAAADGF2MUOBAAAAAAAAFWlwbWEAAAAAAAAAAQABAgECAAAAI21kYXQSAAoIP8R8hAQ0BUAyDWeeUy0JG+QAACANEkA=";
-    const blob = await fetch(avifData).then((r) => r.blob());
-    return window.createImageBitmap(blob).then(
-        () => true,
-        () => false
-    );
-}
-(async () => {
-    const classAvif = (await supportsAvif()) ? "avif" : "no-avif";
-    avifSupport = classAvif;
-    document.body.classList.add(classAvif);
-})();
-
-
-
 cytoscape.use(popper);
+
 
 const cy = cytoscape({
     container: document.getElementById("cy"),
@@ -43,7 +25,7 @@ const cy = cytoscape({
 fetchAllApi().then((response) => {
     let launchResponseSorted = R.sortBy(
         R.prop("date"),
-        response.launches.map((launch) => new Launch(launch, avifSupport))
+        response.launches.map((launch) => new Launch(launch))
     );
     let minLaunch = R.head(launchResponseSorted);
     let minYear = minLaunch.launch_year;

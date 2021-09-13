@@ -1,11 +1,11 @@
 class Launch {
-    constructor(data, avifSupport) {
+    constructor(data) {
       this.data = data;
       this._id = data.mission_name;
       this.name = data.mission_name;
       this.date = Date.parse(data.launch_date_utc);
       this.launch_year = parseInt(data.launch_year);
-      this.avifSupport = avifSupport;
+
     }
 
     getEngineCounts() {
@@ -18,7 +18,7 @@ class Launch {
         return;
       }
       let filename = missionPatch.split("/").pop();
-      if (avifSupport) {
+      if (document.documentElement.classList.contains("avif") == true) {
            filename = `${filename.split(".")[0]}.avif`;
       }
       let imageLocation = `./mission_patch/small/${filename}`;

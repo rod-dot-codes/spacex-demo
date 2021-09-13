@@ -10,6 +10,10 @@ Furthermore, using a graph database allows you to show the reuse of the rockets 
 that is the interesting aspect. Next potential improvements, would be to show which ships they used
 and if any ships serviced the same core repeatedly.
 
+This also supports AVIF, the new image format for the mission patches.
+
+Open your network tab to see if you support AVIF or if it required to load the PNG.
+
 ## Demo
 
 Please see the demo at [https://spacex.rod.codes](https://spacex.rod.codes)
