@@ -32,6 +32,7 @@ Please see the demo at [https://spacex.rod.codes](https://spacex.rod.codes)
 you scroll. Can you preload hints or img tags with a lower priority.~ = *DONE!*
 - Create a continously deploying Github Action that caches the GraphQL pre-built and pre-rendered into the page to speed up
 the demo.
+- Create a user controller that allows you to play at a adjustable speed, also add and remove edges for particular things - and turn on user definable scrolling and editable nodes and edges.
 
 ## Deployment
 
