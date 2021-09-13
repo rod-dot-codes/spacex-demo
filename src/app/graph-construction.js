@@ -138,7 +138,17 @@ const createGraph = (cy, data, predefinedEdges) => {
 
         updateBounds(0, MIN_HEIGHT);
         updateBounds(0, MIN_HEIGHT + 1);
-    });
+        try {
+            let loader = document.getElementById("div-loader");
+            loader.innerHTML = "";
+            loader.remove();
+            loader = null;
+        }
+        catch (e) {
+            console.log(e);
+            
+        }
+     });
 };
 
 export default createGraph;

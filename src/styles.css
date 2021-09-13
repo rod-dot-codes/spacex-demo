@@ -5,3 +5,10 @@ launch-info {
     min-width: 20%;
     max-width: 25%;
 }
+
+#div-loader {
+    min-height: 100vh; /* height of the browser viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
