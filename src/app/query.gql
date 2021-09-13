@@ -1,0 +1,92 @@
+{
+  launches {
+    launch_date_local
+    launch_date_unix
+    launch_date_utc
+    launch_site {
+      site_name_long
+      site_name
+      site_id
+    }
+    launch_success
+    launch_year
+    links {
+      flickr_images
+      mission_patch_small
+      mission_patch
+      presskit
+      reddit_campaign
+      reddit_launch
+      reddit_media
+      reddit_recovery
+      video_link
+      wikipedia
+      article_link
+    }
+    mission_id
+    mission_name
+    rocket {
+      rocket_name
+      rocket_type
+      rocket {
+        boosters
+        company
+        cost_per_launch
+        country
+        description
+        diameter {
+          meters
+        }
+        engines {
+          propellant_1
+          propellant_2
+          number
+          type
+          version
+          layout
+        }
+        first_flight
+        id
+        name
+        stages
+        success_rate_pct
+        type
+        wikipedia
+        first_stage {
+          burn_time_sec
+          engines
+          fuel_amount_tons
+          reusable
+          thrust_sea_level {
+            kN
+          }
+          thrust_vacuum {
+            kN
+          }
+        }
+        second_stage {
+          burn_time_sec
+          engines
+          fuel_amount_tons
+          payloads {
+            option_1
+          }
+          thrust {
+            kN
+            lbf
+          }
+        }
+      }
+      second_stage {
+        block
+      }
+      first_stage {
+        cores {
+          block
+        }
+      }
+    }
+    id
+    details
+  }
+}

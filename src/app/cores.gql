@@ -1,0 +1,18 @@
+{
+  cores(limit: 0) {
+    asds_attempts
+    asds_landings
+    block
+    id
+    missions {
+      flight
+      name
+    }
+    original_launch
+    reuse_count
+    rtls_attempts
+    rtls_landings
+    status
+    water_landing
+  }
+}

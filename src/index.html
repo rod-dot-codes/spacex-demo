@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SpaceX API</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" integrity="sha512-braXHF1tCeb8MzPktmUHhrjZBSZknHvjmkUdkAbeqtIrWwCchhcpUeAf2Sq3yIq1Q1x5PlroafjceOUbIE3Q5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/base.min.css" integrity="sha512-7w16czo+3MOe00eO6LsuOsMoUyMMAqWhNS+K7uyyL+Sjw+fHDHexWCO9w0YyMID+pTDVG5sk/+vY4Hpevoatow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/components.min.css" integrity="sha512-f6TS5CFJrH/EWmarcBwG54/kW9wwejYMcw+I7fRnGf33Vv4yCvy4BecCKTti3l8e8HnUiIbxx3V3CuUYGqR1uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <script type="module" src="./app/launch-info.js"></script>
+
+    <div
+      id="cy"
+      style="
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+      "
+    ></div>
+    <div
+      id="info-containers"
+      style="
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+      "
+    ></div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

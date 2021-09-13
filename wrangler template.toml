@@ -1,0 +1,9 @@
+name = "spacex-demo"
+type = 'webpack'
+account_id = ''
+route = 'spacex.rod.codes/*'
+zone_id = ''
+usage_model = 'bundled'
+workers_dev = false
+target_type = "webpack"
+site = {bucket = "./dist",entry-point = "workers-site"}
