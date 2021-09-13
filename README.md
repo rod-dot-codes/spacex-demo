@@ -35,7 +35,7 @@ the demo.
 
 ## Deployment
 
-Simplfy install by modifying the `wrangler.template.toml' and renaming it to `wrangler.toml`.
+Simplfy install by modifying the `wrangler.template.toml` and renaming it to `wrangler.toml`.
 
 Install `wrangler` from Cloudflare, then:
 
