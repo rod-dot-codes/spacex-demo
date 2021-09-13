@@ -1,5 +1,11 @@
 # SpaceX API Demo
 
+## Screenshots
+
+<img width="1761" alt="Screenshot 2021-09-13 at 09 25 14" src="https://user-images.githubusercontent.com/1850318/133041456-3f883ff2-6b97-40e8-bcfd-bcd5340da765.png">
+<img width="2002" alt="Screenshot 2021-09-13 at 09 25 29" src="https://user-images.githubusercontent.com/1850318/133041485-db8eaebe-c43a-491b-a773-c83e56edc493.png">
+
+
 ## Introduction
 
 The brief was to use any language to create a timeline of SpaceX launches.
